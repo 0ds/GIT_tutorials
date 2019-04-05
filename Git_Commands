@@ -1,0 +1,24 @@
+Alias:-
+  # git config --global alias.hist "log --oneline --graph --decorate --color"
+  # git hist
+    >>>>* 683b2e9 (HEAD, master) 1st commit
+-------------------------------------------------------------------------
+Link repository:-
+  # git remote add origin https://github.com/0ds/test_demo.git
+  # git remote -v
+      >>>> origin	https://github.com/0ds/test_demo.git (fetch)
+           origin	https://github.com/0ds/test_demo.git (push)
+--------------------------------------------------------------------------
+clone:-
+  # git clone <repository_URL>
+--------------------------------------------------------------------------
+Add:-
+  # git add <filename>
+--------------------------------------------------------------------------
+delete/Remove:-
+  # git rm -f <file_name>  ----------> -f= forcefully
+         |
+         .------> this command will run only when the file is added onto git using (# git add...) after the ececution of the command the fill will not only get un staged but will also get deleted from the directory
+----------------------------------------------------------------------------
+
+
