@@ -1,0 +1,3 @@
+when edit is in 
+  Same line of a samefile      ------> No merge Conflict will occure
+  Different line of a samefile ------> Merge conflict will occure
