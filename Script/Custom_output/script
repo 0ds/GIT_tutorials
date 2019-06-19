@@ -1,0 +1,9 @@
+URL:-
+  1. https://git-scm.com/docs/git-for-each-ref
+  2. https://stackoverflow.com/questions/5188320/how-can-i-get-a-list-of-git-branches-ordered-by-most-recent-commit
+
+------------------------------------------------------------------------------
+
+[vishalraj@localhost git]$ git for-each-ref --shell --sort=committerdate refs/heads/ --format="%(color:green)%(committerdate:relative)%(color:reset) - %(authorname) - %(authoremail) - %(contents:subject)"
+'''27 minutes ago''' - 'Vishal Raj' - '<vishalraj@localhost.localdomain>' - 'JIRA-XXXX'
+
