@@ -1,0 +1,37 @@
+[vishalraj@localhost git]$ git rev-parse master
+0173f597b845fd8f5f600cd3b469f807c6c30d1c
+[vishalraj@localhost git]$ git log
+commit 0173f597b845fd8f5f600cd3b469f807c6c30d1c (HEAD -> master)
+Author: Vishal Raj <vishalraj@localhost.localdomain>
+Date:   Tue Jun 25 19:44:36 2019 +0530
+
+    2. hello
+
+commit e400bcf2495ac077107f3361c3df248665f1de1e
+Author: Vishal Raj <vishalraj@localhost.localdomain>
+Date:   Tue Jun 25 19:44:08 2019 +0530
+
+    1
+[vishalraj@localhost git]$ git checkout HEAD e400bcf24
+error: pathspec 'e400bcf24' did not match any file(s) known to git
+[vishalraj@localhost git]$ git checkout HEAD~1
+Note: checking out 'HEAD~1'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at e400bcf 1
+[vishalraj@localhost git]$ git log
+commit e400bcf2495ac077107f3361c3df248665f1de1e (HEAD)
+Author: Vishal Raj <vishalraj@localhost.localdomain>
+Date:   Tue Jun 25 19:44:08 2019 +0530
+
+    1
+[vishalraj@localhost git]$ git rev-parse master
+0173f597b845fd8f5f600cd3b469f807c6c30d1c
